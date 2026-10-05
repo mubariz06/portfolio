@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="canonical" href="https://mubarizportfolio.vercel.app/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230c0f14'/%3E%3Ctext x='32' y='46' font-size='40' font-weight='700' text-anchor='middle' font-family='sans-serif' fill='%23ffb454'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230c0f14'/%3E%3Ctext x='32' y='46' font-size='40' font-weight='700' text-anchor='middle' font-family='sans-serif' fill='%23ebb736'%3EM%3C/text%3E%3C/svg%3E">
 <meta name="theme-color" content="#0c0f14">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Mubariz | Data Engineer">
@@ -27,30 +27,30 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+<a class="skip" href="#main">Skip to content</a>
 <header class="nav">
-  <a class="logo" href="#home">MUBARIZ</a>                            
-  <button class="menu" id="menu" aria-label="Toggle menu" aria-expanded="false">MENU ☰</button>
-  <nav id="links">
+  <a class="logo" href="#home">MUBARIZ</a>
+  <button class="menu" id="menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="links">MENU ☰</button>
+  <nav id="links" aria-label="Primary">
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
-    <a href="#certifications">Certifications</a>
+    <a href="#certifications">Credentials</a>
     <a href="#contact">Contact</a>
     <a class="gh" href="https://github.com/mubariz06" target="_blank" rel="noopener">GitHub ●</a>
     <button class="theme" id="theme" aria-label="Toggle light/dark theme">◐ Theme</button>
   </nav>
 </header>
 
-<main>
+<main id="main">
 <section class="hero" id="home">
   <div class="hero-text">
     <p class="tag">Data Engineer · Portfolio</p>
     <h1>Mubariz<span>.</span></h1>
     <p class="role">role.title</p>
-    <h2>Data Engineer / PySpark · AWS · Azure Databricks</h2>
-    <p class="lead">3+ years turning messy, large-scale data into pipelines that just work.</p>
+    <h2>Data Engineer / PySpark · Azure Databricks · GCP · AWS</h2>
+    <p class="lead">3+ years building cloud data pipelines: ingestion, transformation, orchestration and quality checks.</p>
     <div class="btns">
       <a class="btn primary" href="Mubariz-Resume.pdf" download>Download Resume ↓</a>
       <a class="btn" href="#projects">View Projects</a>
@@ -60,7 +60,7 @@
     <p class="meta"><span>◎ Hyderabad, India</span> <span class="live">● Open to opportunities</span></p>
   </div>
   <figure class="photo">
-    <img src="profile.jpg" alt="Mubariz" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'M'}))">
+    <img src="profile.jpg" width="1014" height="1420" alt="Portrait of Mubariz" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'M'}))">
     <figcaption>NODE · MUBARIZ <b>STATUS: ONLINE</b></figcaption>
   </figure>
 </section>
@@ -70,15 +70,15 @@
   <h2 class="title">Pipelines you can trust.</h2>
   <div class="about">
     <div>
-      <p>I turn messy, large-scale data into pipelines that just work. Over the past 3+ years I've built and optimized ETL pipelines for cloud and big data teams, specializing in PySpark, AWS, and Azure Databricks.</p>
-      <p>I care about making data pipelines faster, cleaner, and easier to trust. That means solving real business problems, not just writing code.</p>
-      <p>Recognized with a <strong>Star Performer Award</strong> for consistently delivering reliable, high-impact data solutions.</p>
+      <p>I build and operate cloud data pipelines end to end for product and enterprise clients. Today that means PySpark and Spark SQL on Azure Databricks and GCP; earlier it meant AWS, Snowflake and Airflow.</p>
+      <p>I care about the unglamorous parts that make data dependable: incremental loads, validation, logging, failure handling, and documentation that lets the next person take over smoothly.</p>
+      <p>Recognized with the <strong>Wipro Star Performer Award</strong> for on-time delivery and quality work on data-platform projects.</p>
     </div>
     <ul class="stats">
       <li><b>3+</b><span>Years experience</span></li>
       <li><b>PySpark</b><span>Core engine</span></li>
-      <li><b>Multi-cloud</b><span>AWS · Azure · GCP</span></li>
-      <li><b>Multi-TB</b><span>Data processed</span></li>
+      <li><b>3 clouds</b><span>AWS · Azure · GCP</span></li>
+      <li><b>3 certs</b><span>AWS · Azure · GCP</span></li>
     </ul>
   </div>
 </section>
@@ -92,24 +92,27 @@
       <h3>Wipro</h3>
       <p class="sub">Data Engineer <em>Jun 2024 — Present</em></p>
       <ul>
-        <li>Design and maintain PySpark-based ETL pipelines processing large-scale datasets across cloud environments for big data teams.</li>
-        <li>Optimized pipeline runtimes and improved data reliability across multiple projects, spanning 3 cloud platforms (AWS, Azure, GCP).</li>
-        <li>Built ETL pipelines handling multi-TB datasets for downstream analytics and simulation workloads.</li>
-        <li>Received the Star Performer Award for consistently delivering reliable, high-impact data solutions.</li>
+        <li>Build and maintain data pipelines on GCP and Azure Databricks for a US autonomous-mobility client, covering large-volume telemetry and platform datasets used by analytics and engineering teams.</li>
+        <li>Developed and scheduled PySpark and Spark SQL transformations in Databricks notebooks and workflows, using partitioning and incremental patterns.</li>
+        <li>Added validation, logging and failure handling; handled schema changes and production support.</li>
+        <li>Documented jobs and data layers for smooth handover.</li>
+        <li>Received the Wipro Star Performer Award for on-time delivery and quality.</li>
       </ul>
-      <p class="chips"><i>PySpark</i><i>Azure Databricks</i><i>AWS</i><i>Delta Lake</i><i>SQL</i></p>
+      <p class="chips"><i>PySpark</i><i>Spark SQL</i><i>Azure Databricks</i><i>GCP</i><i>Delta Lake</i></p>
     </div>
   </article>
   <article class="job">
     <span class="n">02</span>
     <div>
-      <h3>P.R Associates</h3>
-      <p class="sub">Big Data Developer <em>Jun 2023 — Jun 2024</em></p>
+      <h3>P.R. Associates</h3>
+      <p class="sub">Data Engineer · Client: Inshorts <em>Jun 2023 — Jun 2024</em></p>
       <ul>
-        <li>Delivered dimensional models and reporting datasets used by business and operations teams.</li>
-        <li>Improved pipeline reliability and reduced ad-hoc manual runs by moving jobs to Airflow-based scheduling.</li>
+        <li>Built AWS, Snowflake and Airflow pipelines for Inshorts, a news and digital content platform, to ingest, cleanse and load content, engagement and metadata into the warehouse.</li>
+        <li>Implemented incremental Snowflake loads with basic clustering and partitioning.</li>
+        <li>Standardized table definitions and ran quality checks on incoming feeds, reducing ad-hoc cleanup for the client data team.</li>
+        <li>Partnered with product and data owners on requirements and test cases.</li>
       </ul>
-      <p class="chips"><i>Spark</i><i>Hive</i><i>Airflow</i><i>SQL</i><i>Dimensional Modeling</i></p>
+      <p class="chips"><i>AWS</i><i>Snowflake</i><i>Airflow</i><i>SQL</i><i>Python</i></p>
     </div>
   </article>
 </section>
@@ -118,11 +121,10 @@
   <p class="idx">Skills</p>
   <h2 class="title">Technical stack.</h2>
   <div class="grid skills">
-    <div class="card"><small>01 / Languages</small><h3>Programming</h3><p class="chips"><i>Python</i><i>SQL</i><i>PySpark</i><i>Spark SQL</i></p></div>
-    <div class="card"><small>02 / Big Data</small><h3>Frameworks</h3><p class="chips"><i>Apache Spark</i><i>Delta Lake</i><i>Hive</i><i>Airflow</i></p></div>
-    <div class="card"><small>03 / Cloud</small><h3>Platforms</h3><p class="chips"><i>AWS EMR</i><i>Azure Databricks</i><i>GCP Dataflow</i><i>S3</i></p></div>
-    <div class="card"><small>04 / Data</small><h3>Databases</h3><p class="chips"><i>Snowflake</i><i>BigQuery</i><i>Hive</i></p></div>
-    <div class="card"><small>05 / Tools</small><h3>Workflow</h3><p class="chips"><i>Git</i><i>Jira</i></p></div>
+    <div class="card"><small>Cloud</small><h3>Platforms</h3><p class="chips"><i>AWS</i><i>GCP</i><i>Azure Databricks</i></p></div>
+    <div class="card"><small>Processing</small><h3>Processing &amp; orchestration</h3><p class="chips"><i>PySpark</i><i>Spark SQL</i><i>Apache Airflow</i><i>Databricks</i></p></div>
+    <div class="card"><small>Storage</small><h3>Warehousing &amp; storage</h3><p class="chips"><i>Snowflake</i><i>Delta Lake</i><i>Lakehouse patterns</i><i>Partitioned cloud storage</i></p></div>
+    <div class="card"><small>Practices</small><h3>Engineering &amp; languages</h3><p class="chips"><i>ETL/ELT design</i><i>Incremental loads</i><i>Data validation</i><i>Monitoring</i><i>Git</i><i>Python</i><i>SQL</i><i>Linux</i></p></div>
   </div>
   <p class="status">SYSTEM.STACK <b>● PRODUCTION READY</b></p>
 </section>
@@ -133,47 +135,48 @@
   <div class="grid projects">
     <article class="card proj">
       <p class="pn">Project 01 <b>● Featured</b></p>
-      <h3>Autonomous Vehicle Data Lakehouse Pipeline</h3>
-      <p><strong>Goal:</strong> Prepare multi-TB sensor and simulation data for mapping, simulation replay, and safety analytics.</p>
-      <p><strong>Solution:</strong> Cloud-native ETL pipelines that ingest, transform, and curate the data.</p>
-      <p><strong>Impact:</strong> Multi-TB data curated across 3 cloud platforms (Azure, AWS, GCP) for 3 downstream use cases.</p>
-      <pre class="flow">Sensor + Simulation Data
+      <h3>Telemetry &amp; Platform Data Pipelines</h3>
+      <p><strong>Goal:</strong> Make large-volume telemetry and platform datasets reliable for analytics and engineering consumers.</p>
+      <p><strong>Solution:</strong> PySpark and Spark SQL jobs on Databricks (GCP and Azure) with partitioning, incremental processing, validation, logging and failure handling.</p>
+      <p><strong>Impact:</strong> Stable production pipelines with documented jobs and data layers, supported through schema changes.</p>
+      <pre class="flow">Telemetry + Platform Data
 ↓
-PySpark ETL (Databricks / EMR / Dataflow)
+PySpark / Spark SQL (Databricks)
 ↓
-Delta Lake (curated)
+Validated, partitioned layers
 ↓
-Mapping · Replay · Safety Analytics</pre>
-      <p class="chips"><i>PySpark</i><i>Azure Databricks</i><i>AWS EMR</i><i>GCP Dataflow</i><i>Delta Lake</i></p>
-      <p class="links"><a href="https://github.com/mubariz06" target="_blank" rel="noopener">View project →</a> <a href="https://github.com/mubariz06" target="_blank" rel="noopener">GitHub ↗</a></p>
+Analytics · Engineering consumers</pre>
+      <p class="chips"><i>PySpark</i><i>Spark SQL</i><i>Azure Databricks</i><i>GCP</i><i>Delta Lake</i></p>
+      <p class="note">Client work: source code is private.</p>
     </article>
     <article class="card proj">
       <p class="pn">Project 02</p>
-      <h3>Snowflake Analytics &amp; Reconciliation Layer</h3>
-      <p><strong>Goal:</strong> Trusted datasets for analytics and reporting.</p>
-      <p><strong>Solution:</strong> Loaded curated data into Snowflake and wrote optimized SQL for validation, reconciliation, and dimensional modeling across Snowflake, Hive, and BigQuery.</p>
-      <p><strong>Impact:</strong> One reconciled analytics layer across 3 warehouses (Snowflake, Hive, BigQuery).</p>
-      <pre class="flow">Curated Datasets
+      <h3>Content Warehouse Pipelines (Inshorts)</h3>
+      <p><strong>Goal:</strong> Load clean content, engagement and metadata feeds into the warehouse for the client data team.</p>
+      <p><strong>Solution:</strong> Airflow-orchestrated AWS pipelines with incremental Snowflake loads, clustering and partitioning, standardized table definitions and feed quality checks.</p>
+      <p><strong>Impact:</strong> Less ad-hoc cleanup work for the client data team.</p>
+      <pre class="flow">Content + Engagement Feeds
 ↓
-Spark SQL
+Cleanse · Quality checks
 ↓
-Snowflake
+Incremental Snowflake loads
 ↓
-Validation · Reconciliation · Reporting</pre>
-      <p class="chips"><i>Snowflake</i><i>Spark SQL</i><i>Hive</i><i>BigQuery</i></p>
-      <p class="links"><a href="https://github.com/mubariz06" target="_blank" rel="noopener">View project →</a> <a href="https://github.com/mubariz06" target="_blank" rel="noopener">GitHub ↗</a></p>
+Warehouse tables · Reporting</pre>
+      <p class="chips"><i>AWS</i><i>Snowflake</i><i>Airflow</i><i>SQL</i></p>
+      <p class="note">Client work: source code is private.</p>
     </article>
   </div>
 </section>
 
 <section id="certifications">
-  <p class="idx">Certifications</p>
+  <p class="idx">Credentials</p>
   <h2 class="title">Certified.</h2>
   <div class="grid certs">
-    <div class="card"><small>Amazon Web Services</small><h3>AWS Certified Solutions Architect – Associate</h3></div>
-    <div class="card"><small>Microsoft</small><h3>Microsoft Azure Fundamentals (AZ-900)</h3></div>
+    <div class="card"><small>Amazon Web Services</small><h3>AWS Certified Solutions Architect – Associate (SAA-C03)</h3></div>
+    <div class="card"><small>Microsoft</small><h3>Microsoft Certified: Azure Fundamentals (AZ-900)</h3></div>
+    <div class="card"><small>Google Cloud</small><h3>Google Cloud Associate Data Practitioner</h3></div>
+    <div class="card"><small>Education · 2024 – 2026</small><h3>M.Tech, Computer Science &amp; Engineering, JNTU Hyderabad</h3></div>
   </div>
-  <p class="resume"><a class="btn primary" href="Mubariz-Resume.pdf" download>📥 Download my Resume (PDF)</a></p>
 </section>
 
 <section id="contact">
@@ -182,10 +185,11 @@ Validation · Reconciliation · Reporting</pre>
   <p class="lead">Open to full-time data engineering roles, contract work, and remote opportunities.</p>
   <div class="grid contact">
     <a class="card" href="mailto:gulammohammedmubarizuddin@gmail.com"><small>Email</small><h3>gulammohammedmubarizuddin@gmail.com</h3></a>
-    <button class="card copy" id="copy" data-email="gulammohammedmubarizuddin@gmail.com"><small>Quick copy</small><h3>Copy email address</h3></button>
+    <button class="card copy" id="copy" data-email="gulammohammedmubarizuddin@gmail.com"><small>Quick copy</small><span class="h">Copy email address</span></button>
     <a class="card" href="https://linkedin.com/in/mubariz06" target="_blank" rel="noopener"><small>LinkedIn</small><h3>linkedin.com/in/mubariz06 ↗</h3></a>
     <a class="card" href="https://github.com/mubariz06" target="_blank" rel="noopener"><small>GitHub</small><h3>View GitHub ↗</h3></a>
   </div>
+  <p class="resume"><a class="btn primary" href="Mubariz-Resume.pdf" download>Download Resume (PDF) ↓</a></p>
 </section>
 </main>
 
